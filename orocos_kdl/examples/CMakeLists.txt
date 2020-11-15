@@ -7,8 +7,11 @@ IF(ENABLE_EXAMPLES)
   add_executable(trajectory_example trajectory_example.cpp )
   TARGET_LINK_LIBRARIES(trajectory_example orocos-kdl)
   
-  add_executable(chainiksolverpos_lma_demo chainiksolverpos_lma_demo.cpp )
-  TARGET_LINK_LIBRARIES(chainiksolverpos_lma_demo orocos-kdl orocos-kdl-models)
+  # add_executable(chainiksolverpos_lma_demo chainiksolverpos_lma_demo.cpp )
+  # TARGET_LINK_LIBRARIES(chainiksolverpos_lma_demo orocos-kdl orocos-kdl-models)
+
+  add_executable(chainfksolveracc_recursive_example chainfksolveracc_recursive_example.cpp )
+  TARGET_LINK_LIBRARIES(chainfksolveracc_recursive_example orocos-kdl)
 
 ENDIF(ENABLE_EXAMPLES)  
 

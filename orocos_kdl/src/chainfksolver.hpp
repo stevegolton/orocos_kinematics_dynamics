@@ -132,7 +132,7 @@ namespace KDL {
     virtual int JntToCart(const JntArrayAcc& q_in, std::vector<FrameAcc>& out,int segmentNr=-1)=0;
     
         virtual void updateInternalDataStructures()=0;
-        virtual ~ChainFkSolverAcc()=0;
+        virtual ~ChainFkSolverAcc() {}
     };
 
 
